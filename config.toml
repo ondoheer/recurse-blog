@@ -11,7 +11,7 @@ theme = "nix"
   HeaderUsername = "ondoheer"
   HeaderHostname = "RecurseNYC"
   Email = "ondoheer@gmail.com" 
-  About = "info_about_you"
+  About = "A small blog to highlight my daily experiences at RC <a href=""> </a>"
   ProfilePicture = "http://www.ondoheer.com/static/images/profile.png"
   GoogleAnalytics = "your_google_analytics_id"
 
