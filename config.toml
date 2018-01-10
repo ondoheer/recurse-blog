@@ -1,0 +1,23 @@
+baseURL = "http://blog.ondoheer.com"
+languageCode = "en-us"
+title = "My Recursive Time"
+theme = "nix"
+
+[params]
+  StackOverflowID = "https://stackoverflow.com/users/2647108/pedro-alejandro"
+  GithubID = "https://github.com/ondoheer"
+  LinkedInID = "https://www.linkedin.com/in/pedro-alejandro-baumann-cornejo-68745a21/"
+  Name = "Pedro Baumann"
+  HeaderUsername = "ondoheer"
+  HeaderHostname = "RecurseNYC"
+  Email = "ondoheer@gmail.com" 
+  About = "info_about_you"
+  ProfilePicture = "http://www.ondoheer.com/static/images/profile.png"
+  GoogleAnalytics = "your_google_analytics_id"
+
+[menu]
+  [[menu.header]]
+    name = "posts"
+    weight = 0
+    url = "/posts"
+ 
