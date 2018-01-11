@@ -12,30 +12,30 @@
     
     
     <item>
-      <title>Day 2: Nand2Tetris</title>
-      <link>http://blog.ondoheer.com/posts/01-02-2018/</link>
+      <title>Day 3: A different mindset</title>
+      <link>http://blog.ondoheer.com/posts/3/</link>
       <pubDate>Wed, 10 Jan 2018 18:07:02 -0500</pubDate>
       
-      <guid>http://blog.ondoheer.com/posts/01-02-2018/</guid>
+      <guid>http://blog.ondoheer.com/posts/3/</guid>
+      <description>So, today I arrived at RC at 820, I was surprised to be the first, so I poured myself some coffee and started working on the HDL Chip Design excercises. I had to go back to the NAND descripcion videos and pick up some pen and paper to actually understand how electronic circuits work. After some pen and paper hacking I manage to compose the basic circuits, then, reviewing implementations, and reviewing the book again, I end up with valid Mux and Demux chips.</description>
+    </item>
+    
+    <item>
+      <title>Day 2: Nand2Tetris</title>
+      <link>http://blog.ondoheer.com/posts/2/</link>
+      <pubDate>Tue, 09 Jan 2018 18:07:02 -0500</pubDate>
+      
+      <guid>http://blog.ondoheer.com/posts/2/</guid>
       <description>Today I started with Nand2Tetris, it is this amazing course from the Hebrew University of Jerusalem where they teach you from scratch how to buld an actual computer. We begin by learning how to build basic logical gates or computer chips with a Hardware Design Language, and from there, you begin your travel to higher and higher abstractions. The actual path is:
  Boolean Logic Boolean Arithmetic Sequential Logic Machine Language Computer Architecture Assembler Virtual Machine: Stack Arithmetic Virtual Machine: Program Control High Level Language Compiler: Syntax Analysis Compiler: Code Generation Operating System Postscript  So basically you begin building basic CPU chips using only NAND gates and end up with a fully fledged computer capable of runing not only the OS that you built, but also any software you right and compile for it.</description>
     </item>
     
     <item>
-      <title>Day 3: Drawing chips!</title>
-      <link>http://blog.ondoheer.com/posts/01-03-2018/</link>
-      <pubDate>Wed, 10 Jan 2018 18:07:02 -0500</pubDate>
-      
-      <guid>http://blog.ondoheer.com/posts/01-03-2018/</guid>
-      <description> Hugo https://repl.it/repls/CriticalExcitableCockerspaniel Flask Language programming  </description>
-    </item>
-    
-    <item>
       <title>Day 1: Arrival</title>
-      <link>http://blog.ondoheer.com/posts/01-01-2018/</link>
+      <link>http://blog.ondoheer.com/posts/1/</link>
       <pubDate>Mon, 08 Jan 2018 13:59:02 -0500</pubDate>
       
-      <guid>http://blog.ondoheer.com/posts/01-01-2018/</guid>
+      <guid>http://blog.ondoheer.com/posts/1/</guid>
       <description>I almost arrive late (or don&amp;rsquo;t arrive at all) to my first day. My flight from panama got turned around because of an accident due to bad weather at JFk airport. Luckyly in the end we embarqued in a charter direct to NYC.
 As I was knackered by the 2 day trip and had barely slept, I&amp;rsquo;ll just bulletpoint what I remember:
  RC tour, didin&amp;rsquo;t really hear what Nick was saying, will figure it out on the way Another peruvian in the same batch!</description>
