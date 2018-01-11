@@ -13,7 +13,7 @@ theme = "nix"
   Email = "ondoheer@gmail.com" 
   About = "A small blog to highlight my daily experiences at RC"
   ProfilePicture = "http://www.ondoheer.com/static/images/profile.png"
-  GoogleAnalytics = "your_google_analytics_id"
+  GoogleAnalytics = "UA-56029240-4"
 
 [menu]
   [[menu.header]]
