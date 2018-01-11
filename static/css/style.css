@@ -1,0 +1,6 @@
+/* Personal changes to the styles*/
+
+.post-content img{
+	max-width: 90%;
+	height: 500px;
+}
