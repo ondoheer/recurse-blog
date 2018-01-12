@@ -2,7 +2,7 @@
 <html>
 
     <head>
-        <title> Day 1: Arrival &middot; My Recursive Time </title>
+        <title> Day 4: Game night &middot; My Recursive Time </title>
 
         <link rel="shortcut icon" href="/assets/favicon.png">
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
@@ -77,21 +77,60 @@ ga('create', 'UA-56029240-4', 'auto');
 </header>
 
         <div class="container wrapper">
-            <h1><a href="http://blog.ondoheer.com/posts/1/">Day 1: Arrival</a></h1>
-            <span class="post-date">Jan 8, 2018 </span>
+            <h1><a href="http://blog.ondoheer.com/posts/4/">Day 4: Game night</a></h1>
+            <span class="post-date">Jan 11, 2018 </span>
             <div class="post-content">
-                <p>I almost arrive late (or don&rsquo;t arrive at all) to my first day.
-My flight from panama got turned around because of an accident due to bad weather at JFk airport. Luckyly in the end we embarqued in a charter direct to NYC.</p>
+                
 
-<p>As I was knackered by the 2 day trip and had barely slept, I&rsquo;ll just bulletpoint what I remember:</p>
+<p>Today I forgot my laptop and realized only too late, so by the time I got back to RC with it, it was already 1230. I started by finishing the Chips excercises. I thought the 16 bit ones were going to be more challenging, but they were just what they are meant to be, 16 bit chips (duh), so here is a 16 bit implementation of the <strong>AND</strong> chip</p>
+
+<pre><code>
+CHIP And16 {
+    IN a[16], b[16];
+    OUT out[16];
+
+    PARTS:
+    // Put your code here:
+    And(a=a[0],    b=b[0],   out=out[0]);
+    And(a=a[1],    b=b[1],   out=out[1]);
+    And(a=a[2],    b=b[2],   out=out[2]);
+    And(a=a[3],    b=b[3],   out=out[3]);
+    And(a=a[4],    b=b[4],   out=out[4]);
+    And(a=a[5],    b=b[5],   out=out[5]);
+    And(a=a[6],    b=b[6],   out=out[6]);
+    And(a=a[7],    b=b[7],   out=out[7]);
+    And(a=a[8],    b=b[8],   out=out[8]);
+    And(a=a[9],    b=b[9],   out=out[9]);
+    And(a=a[10],   b=b[10],  out=out[10]);
+    And(a=a[11],   b=b[11],  out=out[11]);
+    And(a=a[12],   b=b[12],  out=out[12]);
+    And(a=a[13],   b=b[13],  out=out[13]);
+    And(a=a[14],   b=b[14],  out=out[14]);
+    And(a=a[15], b=b[15], out=out[15]);
+}
+
+</code></pre>
+
+<p>It is just 16 1 bit chips assembled together.
+The 4 way Mux and Demux were more challenging, and I had to end up lookig for solutions online. Luckyly I&rsquo;m not training to become an electrical engineer.</p>
+
+<p>After launch I went for a coffee with Tyler to get to know eachother, and had a nice chat about libing abroad. He lived in japan for 8 years.</p>
+
+<p>I started the MIT <a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/lecture-videos/">Introduction to Algorithms</a> course. Most of it reminded me of Hardvard&rsquo;s CS50, but it wasn&rsquo;t clearely aimed to total noobs, so the math in it was more straight forward. I&rsquo;m looking forward to facing the pset tomorrow. I miss programming in python.</p>
+
+<p>In the afternoon, as it will be every thursday, we had something like <em>demo day</em> where people gave short expositions on what they have been working this week. I have to say it blew my mind. Just seeing the passion people put into their experiments and projects is enough to motivate you. There were to many great ones. It just made me crave to build an actual project instead of just focusing on studying. I&rsquo;ll have to try and see.</p>
+
+<p>After the demos, <strong>Game night</strong> started. Beers, Ciders, Really good Brooklyn Pizza and Boardgames. A lot of alumni came over, almost all of us stayed there. I played a few rounds of <strong>Codenames</strong> and found out it is much better if you play it with 6+ players.</p>
+
+<h3 id="snippets">Snippets</h3>
 
 <ul>
-<li>RC tour, didin&rsquo;t really hear what Nick was saying, will figure it out on the way</li>
-<li>Another peruvian in the same batch!! Great news, he is great.</li>
-<li>Tried my best to remeber other peoples names, as always, didin&rsquo;t work.</li>
-<li>Learned about Natural Language Vectors from James, went for lunch with him and downloaded his brother&rsquo;s just released game <strong>Antihero</strong></li>
-<li>I don&rsquo;t have my laptop yet, so after struggling with staying awake in the afternoon, I decided to go pick it up and visit Augusto</li>
-<li><strong>Nadn2Tetris!</strong> I heard about it at the RC email presentations, I read about it in HN, but somehow just listening to people talk about it convinced me. I wanted to learn the fundamentals of CS, so what better way than this? I might start tomorrow!</li>
+<li>Opened my Wells Fargo Bank Account</li>
+<li>Still hate NYC trains</li>
+<li>Ordered my Headset jack adapter thanks to Joey</li>
+<li>My Razer Mouse arrived</li>
+<li>Finished Daemon 2 comicbook, thanks Ann!</li>
+<li>Started Saga # 3</li>
 </ul>
 
             </div>
