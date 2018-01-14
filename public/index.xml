@@ -6,10 +6,19 @@
     <description>Recent content on My Recursive Time</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 11 Jan 2018 18:07:02 -0500</lastBuildDate>
+    <lastBuildDate>Fri, 12 Jan 2018 09:56:01 -0500</lastBuildDate>
     
 	<atom:link href="http://blog.ondoheer.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>5</title>
+      <link>http://blog.ondoheer.com/posts/5/</link>
+      <pubDate>Fri, 12 Jan 2018 09:56:01 -0500</pubDate>
+      
+      <guid>http://blog.ondoheer.com/posts/5/</guid>
+      <description>Today I arrived and met Alessandro, he is from the mini batch, so this is his last day. From him I learned about some amazing initiatives being developed like TablaViva. He is working in creating a reactive environment that will react to defined facts. I find itr fascinating because I think this could really end up being a great tool to teach kids about logic and how computers work. Initiatives like Cubetto are nice, but their goal is to be used inside of your house.</description>
+    </item>
     
     <item>
       <title>Day 4: Game night</title>
