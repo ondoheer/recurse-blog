@@ -6,10 +6,56 @@
     <description>Recent content in Posts on My Recursive Time</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 12 Jan 2018 09:56:01 -0500</lastBuildDate>
+    <lastBuildDate>Thu, 18 Jan 2018 09:56:01 -0500</lastBuildDate>
     
 	<atom:link href="http://blog.ondoheer.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Day 10: Presentation day</title>
+      <link>http://blog.ondoheer.com/posts/10/</link>
+      <pubDate>Thu, 18 Jan 2018 09:56:01 -0500</pubDate>
+      
+      <guid>http://blog.ondoheer.com/posts/10/</guid>
+      <description>Today I signed up to give the target=&amp;rdquo;_blank&amp;rdquo; vulnerability talk. It was at 1745, so I had plenty of time to focus on other stuff. I started vbvy building the RAM chips for the Nand2Tetris class, and then decided to further advance on the ReactJS book. I programmed at least until 1720 and then went out to socialize before the talk. The ReactJS book is becoming the sort of book where you actually think there have to be other ways of doing this.</description>
+    </item>
+    
+    <item>
+      <title>Day 9: Managing FOMO (Fear of missing out)</title>
+      <link>http://blog.ondoheer.com/posts/9/</link>
+      <pubDate>Wed, 17 Jan 2018 09:56:01 -0500</pubDate>
+      
+      <guid>http://blog.ondoheer.com/posts/9/</guid>
+      <description>Today I started by watching the Algorithms class for week 2. I was so hooked on React (and coding mostly) that I wasn&amp;rsquo;t to keen on watching it. I was wrong, the class is enticing and teaches complex concepts in a really great way. After that I was able to understand the afternoon algo&amp;rsquo;s meeting on rendering fractals with the CPU or the GPU asypthotic complexity. I have set myself a goal of spending 1 hour at these meetings so I don&amp;rsquo;t get distracted from nadn2tetris and the ReactJS book, this time I&amp;rsquo;m going to finish it.</description>
+    </item>
+    
+    <item>
+      <title>Day 8: Here comes React!</title>
+      <link>http://blog.ondoheer.com/posts/8/</link>
+      <pubDate>Tue, 16 Jan 2018 09:56:01 -0500</pubDate>
+      
+      <guid>http://blog.ondoheer.com/posts/8/</guid>
+      <description>Yesterday I played Overwatch until 1 am, I will blame Renato, everything it&amp;rsquo;s always his fault. I thought this woudl not be a productive day, but I have to say, Esen is right when he says he codes better when he is a little bit tired, this way the brain focuses only at the task at hand and doesn&amp;rsquo;t wander around so much. I arrived and met James, toyed a bit with my phishing site and couldn&amp;rsquo;t find a single famous site that hadn&amp;rsquo;t prevented the attack yet.</description>
+    </item>
+    
+    <item>
+      <title>Day 7: Holiday</title>
+      <link>http://blog.ondoheer.com/posts/7/</link>
+      <pubDate>Mon, 15 Jan 2018 09:56:01 -0500</pubDate>
+      
+      <guid>http://blog.ondoheer.com/posts/7/</guid>
+      <description>Today was Martir Luther King Jr, so it was a national holiday. Still, many of us came to RC to keep going. I decided to walk here for the first time, it&amp;rsquo;s only around 10km away, and this really helped understand what was going on above ground.
+I met with roberto, and after shwing to him the referrer vulnerability project, I decided to polish and finish it. It is now online on mi site.</description>
+    </item>
+    
+    <item>
+      <title>Day 6: Phishing</title>
+      <link>http://blog.ondoheer.com/posts/6/</link>
+      <pubDate>Sun, 14 Jan 2018 09:56:01 -0500</pubDate>
+      
+      <guid>http://blog.ondoheer.com/posts/6/</guid>
+      <description>So, today was sunday, but we could still come to RC, it&amp;rsquo;s open 24x7! I decided I wanted to try to implement a website idea I had a while ago while documenting on the referrer browser functionality. The referrer functionality allows a website that was opened with a target=&amp;rdquo;_blank&amp;rdquo; attribute, to take control of the original website location context, so it could change the previous website while you are not looking.</description>
+    </item>
     
     <item>
       <title>Day 5: Algorithms</title>

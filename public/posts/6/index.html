@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title> Day 6: Phishing &middot; My Recursive Time </title>
+
+        <link rel="shortcut icon" href="/assets/favicon.png">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="generator" content="Hugo 0.32.1" />
+
+
+<script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="http://blog.ondoheer.com/css/nix.css">
+<link rel="stylesheet" type="text/css" href="/css/style.css">
+
+
+<link href="https://fonts.googleapis.com/css?family=Inconsolata|Open+Sans|Roboto|Montserrat|Concert+One" rel="stylesheet">
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-56029240-4', 'auto');
+	  ga('send', 'pageview');
+
+</script>
+
+
+    </head>
+
+    <body>
+        <header>
+<nav class="navbar navbar-default navbar-fixed-top navbar-inverse font-header">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" id="green-terminal" href=http://blog.ondoheer.com>ondoheer@RecurseNYC ~ $</a>
+		</div>
+
+		
+		<div class="collapse navbar-collapse" id="navbar-collapse-1">
+			<ul class="nav navbar-nav navbar-right">
+				<li>
+					<a href="http://blog.ondoheer.com">/home/ondoheer</a>
+				</li>
+				
+				
+				<li >
+					<a href="/posts">~/posts</a>
+				</li>
+				
+
+			</ul>
+		</div>
+	</div>
+</nav>
+</header>
+
+        <div class="container wrapper">
+            <h1><a href="http://blog.ondoheer.com/posts/6/">Day 6: Phishing</a></h1>
+            <span class="post-date">Jan 14, 2018 </span>
+            <div class="post-content">
+                
+
+<p>So, today was sunday, but we could still come to RC, it&rsquo;s open 24x7! I decided I wanted to try to implement a website idea I had a while ago while documenting on the referrer browser functionality. The referrer functionality allows a website that was opened with a <em>target=&rdquo;_blank&rdquo;</em> attribute, to take control of the original website location context, so it could change the previous website while you are not looking.</p>
+
+<p>The first time I read about this, I did a quick implementation using my blog, so if you click on <a href="http://ondoheer.com">ondoheer.com</a> it could switch your original website from whatever it was to whatever I want to. In this case it&rsquo;s just another article on our blog.</p>
+
+<p>Usually this could be dangerous if for example, you would click on a link on Facebook, it would open a new window for that link, and while you werent looking, it would change your Facebook page to a phishing Facebook login page. You would not realize because you would be watching the new website.</p>
+
+<p>So, to build a targeted attack is easy, you just clone the login page for whatever website you wanted to target, but I wanted to see if I could do it for random sites, and on the go.</p>
+
+<p>Many big sites know by now about this vulnerability, and automatically add the required protection attributes to their links, while others implement some same origin policy meta tags that ofuscate the link referrer. In the latter cases I would just show a warning website.</p>
+
+<p>In the end it worked, here is a quick rundown of how I implemented it:</p>
+
+<ol>
+<li>Try to get the referrer website URL</li>
+<li>Search for a <em>DOMAIN/login</em> route on that domain</li>
+<li>If it exists, clone it with wget and switch it&rsquo;s routes to absolute ones, so we can serve that simple HTML</li>
+<li>Inject that HTML with malicious code (in this case just a warning)</li>
+<li>Change the users original website to this new one</li>
+</ol>
+
+<p>I&rsquo;ll try to upload a demo as soon as I finish styling it (just plain HTML atm)</p>
+
+<h3 id="snippets">Snippets</h3>
+
+<ul>
+<li>Played Catan with Joe (flatmate) and his friends. It was great, their are really funny.</li>
+<li>Went to a pub with them, managed to stay awake until 2 am, then went back home. Faki is a catalan that lives here, he invited me to a Digital Ocean meeting on wednesday, exciting!</li>
+</ul>
+
+            </div>
+            
+            <div class="post-comments">
+                
+            </div>
+            
+            <div class="push"></div>
+        </div>
+        <footer class="footer text-center">
+<p>Copyright &copy; 2018 Pedro Baumann -
+<span class="credit">
+	Powered by
+	<a target="_blank" href="https://gohugo.io">Hugo</a>
+	and
+	<a target="_blank" href="https://github.com/LordMathis/hugo-theme-nix/">Nix</a> theme.
+</span>
+</p>
+</footer>
+
+    </body>
