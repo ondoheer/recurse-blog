@@ -2,7 +2,7 @@
 <html>
 
     <head>
-        <title> Day 6: Phishing &middot; My Recursive Time </title>
+        <title> Day 14: So this is how hardware instructions work! &middot; My Recursive Time </title>
 
         <link rel="shortcut icon" href="/assets/favicon.png">
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
@@ -77,38 +77,25 @@ ga('create', 'UA-56029240-4', 'auto');
 </header>
 
         <div class="container wrapper">
-            <h1><a href="http://blog.ondoheer.com/posts/6/">Day 6: Phishing</a></h1>
-            <span class="post-date">Jan 14, 2018 </span>
+            <h1><a href="http://blog.ondoheer.com/posts/14/">Day 14: So this is how hardware instructions work!</a></h1>
+            <span class="post-date">Jan 20, 2018 </span>
             <div class="post-content">
                 
 
-<p>So, today was sunday, but we could still come to RC, it&rsquo;s open 24x7! I decided I wanted to try to implement a website idea I had a while ago while documenting on the referrer browser functionality. The referrer functionality allows a website that was opened with a <em>target=&rdquo;_blank&rdquo;</em> attribute, to take control of the original website location context, so it could change the previous website while you are not looking.</p>
+<p>I started by finishing the React Router tutorial, and then forced myself to stop coding (really hard) to watch the next week of nand2tetris. It stared by explaining the hack programming language and it&rsquo;s interface. It was interesting, it is simmilar to what I had seen of Assembly language, but the really cool part came when I started learning about how writting pixels to a screen works. First, it is so basic anyone can figure it out, but once you start seeing how it goes into the CPU architecture and how it starts loading the instructions per clock cycle, I realized what is it that is happening when a program that consumes a lot of memory (ussually bugged) freezes the PC screen.
+I love it!</p>
 
-<p>The first time I read about this, I did a quick implementation using my blog, so if you click on <a href="http://ondoheer.com">ondoheer.com</a> it could switch your original website from whatever it was to whatever I want to. In this case it&rsquo;s just another article on our blog.</p>
+<p>This weeks lecture was really long, they explained the Hack programing language which I will use to write the assembly code for the Hack computer.
+Tomorrow I&rsquo;ll try to start writting ASM :-\</p>
 
-<p>Usually this could be dangerous if for example, you would click on a link on Facebook, it would open a new window for that link, and while you werent looking, it would change your Facebook page to a phishing Facebook login page. You would not realize because you would be watching the new website.</p>
+<p>The NLP group got together and after a few hours we finally managed to start playing with Spacy. We managed now to extract the PERSON entities from the texts and to organize them by sentences.</p>
 
-<p>So, to build a targeted attack is easy, you just clone the login page for whatever website you wanted to target, but I wanted to see if I could do it for random sites, and on the go.</p>
-
-<p>Many big sites know by now about this vulnerability, and automatically add the required protection attributes to their links, while others implement some same origin policy meta tags that ofuscate the link referrer. In the latter cases I would just show a warning website.</p>
-
-<p>In the end it worked, here is a quick rundown of how I implemented it:</p>
-
-<ol>
-<li>Try to get the referrer website URL</li>
-<li>Search for a <em>DOMAIN/login</em> route on that domain</li>
-<li>If it exists, clone it with wget and switch it&rsquo;s routes to absolute ones, so we can serve that simple HTML</li>
-<li>Inject that HTML with malicious code (in this case just a warning)</li>
-<li>Change the users original website to this new one</li>
-</ol>
-
-<p>I&rsquo;ll try to upload a demo as soon as I finish styling it (just plain HTML atm)</p>
+<p>We probabbly require a counter to actually see how many times each person appears in the text.</p>
 
 <h3 id="snippets">Snippets</h3>
 
 <ul>
-<li>Played Catan with Joe (flatmate) and his friends. It was great, their are really funny.</li>
-<li>Went to a pub with them, managed to stay awake until 2 am, then went back home. Faki is a catalan that lives here, he invited me to a Digital Ocean meeting on wednesday, exciting!</li>
+<li>Victor is discovering Flask, amazing!</li>
 </ul>
 
             </div>

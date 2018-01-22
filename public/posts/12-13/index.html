@@ -2,7 +2,7 @@
 <html>
 
     <head>
-        <title> Day 6: Phishing &middot; My Recursive Time </title>
+        <title> Day 12-13: React take 2 &middot; My Recursive Time </title>
 
         <link rel="shortcut icon" href="/assets/favicon.png">
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
@@ -77,38 +77,24 @@ ga('create', 'UA-56029240-4', 'auto');
 </header>
 
         <div class="container wrapper">
-            <h1><a href="http://blog.ondoheer.com/posts/6/">Day 6: Phishing</a></h1>
-            <span class="post-date">Jan 14, 2018 </span>
+            <h1><a href="http://blog.ondoheer.com/posts/12-13/">Day 12-13: React take 2</a></h1>
+            <span class="post-date">Jan 20, 2018 </span>
             <div class="post-content">
                 
 
-<p>So, today was sunday, but we could still come to RC, it&rsquo;s open 24x7! I decided I wanted to try to implement a website idea I had a while ago while documenting on the referrer browser functionality. The referrer functionality allows a website that was opened with a <em>target=&rdquo;_blank&rdquo;</em> attribute, to take control of the original website location context, so it could change the previous website while you are not looking.</p>
+<p>On saturday I decided to stay home until I had fully understood Redux and the flux pattern. I did the online course by the Redux creator, where he tought how to build Redux from scratch and use it.
+It was enlighting, but when I tried to apply it to my kanban project, I realized I really had no real hands experience with React and I was skipping steps. So I rewinded and started React on Treehouse for I knew they would have nice basic projects to complete. I forced myself to do before watching the videos, and it gave me a better understanding of it.</p>
 
-<p>The first time I read about this, I did a quick implementation using my blog, so if you click on <a href="http://ondoheer.com">ondoheer.com</a> it could switch your original website from whatever it was to whatever I want to. In this case it&rsquo;s just another article on our blog.</p>
-
-<p>Usually this could be dangerous if for example, you would click on a link on Facebook, it would open a new window for that link, and while you werent looking, it would change your Facebook page to a phishing Facebook login page. You would not realize because you would be watching the new website.</p>
-
-<p>So, to build a targeted attack is easy, you just clone the login page for whatever website you wanted to target, but I wanted to see if I could do it for random sites, and on the go.</p>
-
-<p>Many big sites know by now about this vulnerability, and automatically add the required protection attributes to their links, while others implement some same origin policy meta tags that ofuscate the link referrer. In the latter cases I would just show a warning website.</p>
-
-<p>In the end it worked, here is a quick rundown of how I implemented it:</p>
-
-<ol>
-<li>Try to get the referrer website URL</li>
-<li>Search for a <em>DOMAIN/login</em> route on that domain</li>
-<li>If it exists, clone it with wget and switch it&rsquo;s routes to absolute ones, so we can serve that simple HTML</li>
-<li>Inject that HTML with malicious code (in this case just a warning)</li>
-<li>Change the users original website to this new one</li>
-</ol>
-
-<p>I&rsquo;ll try to upload a demo as soon as I finish styling it (just plain HTML atm)</p>
+<p>On sunday I continued and actually began working with React Router v4. I wanted to get everything finished before monday so I could continue to work on nand2tetris and the Algos course during the week. So little time!</p>
 
 <h3 id="snippets">Snippets</h3>
 
 <ul>
-<li>Played Catan with Joe (flatmate) and his friends. It was great, their are really funny.</li>
-<li>Went to a pub with them, managed to stay awake until 2 am, then went back home. Faki is a catalan that lives here, he invited me to a Digital Ocean meeting on wednesday, exciting!</li>
+<li>Had sessions over the weekend</li>
+<li>Saw the sun at sunday 1530 to meet with Augusto and his family at the park.</li>
+<li>Great talk with Augusto to find consultancy oportunities in Lima.</li>
+<li>Almost finished with Mr. Robot season 2}</li>
+<li>Low Comicbook, really good.</li>
 </ul>
 
             </div>
