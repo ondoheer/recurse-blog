@@ -6,10 +6,21 @@
     <description>Recent content on My Recursive Time</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 20 Feb 2018 09:56:01 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 21 Feb 2018 09:56:01 -0500</lastBuildDate>
     
 	<atom:link href="http://blog.ondoheer.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Hack the Deep</title>
+      <link>http://blog.ondoheer.com/posts/hack-the-deep/</link>
+      <pubDate>Wed, 21 Feb 2018 09:56:01 -0500</pubDate>
+      
+      <guid>http://blog.ondoheer.com/posts/hack-the-deep/</guid>
+      <description>DISCLAIMER: it seems the website theme doesn&amp;rsquo;t recognize the images direction and just shows them all in landscape, I don&amp;rsquo;t think I&amp;rsquo;ll fix this
+From february 9 to 11 I joined some recursers at the Hack the Deep Hackaton. It was amazing.
+Different to other Hackatons, it wasn&amp;rsquo;t an open project one. The American Museum of Natural History had worked with some of their scientists to come up with challenges they needed technical skills to solve.</description>
+    </item>
     
     <item>
       <title>Wait what?? where did it go?</title>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title> Hack the Deep &middot; My Recursive Time </title>
+
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="generator" content="Hugo 0.36" />
+
+
+<script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="http://blog.ondoheer.com/css/nix.css">
+
+
+<link href="https://fonts.googleapis.com/css?family=Inconsolata|Open+Sans|Roboto|Montserrat|Concert+One" rel="stylesheet">
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-56029240-4', 'auto');
+	  ga('send', 'pageview');
+
+</script>
+
+
+    </head>
+
+    <body>
+        <header>
+<nav class="navbar navbar-default navbar-fixed-top navbar-inverse font-header">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" id="green-terminal" href=http://blog.ondoheer.com>ondoheer@RecurseNYC ~ $</a>
+		</div>
+
+		
+		<div class="collapse navbar-collapse" id="navbar-collapse-1">
+			<ul class="nav navbar-nav navbar-right">
+				<li>
+					<a href="http://blog.ondoheer.com">/home/ondoheer</a>
+				</li>
+				
+				
+				<li >
+					<a href="/posts">~/posts</a>
+				</li>
+				
+
+			</ul>
+		</div>
+	</div>
+</nav>
+</header>
+
+        <div class="container wrapper">
+            <h1><a href="http://blog.ondoheer.com/posts/hack-the-deep/">Hack the Deep</a></h1>
+            <span class="post-date">Feb 21, 2018 </span>
+            <div class="post-content">
+                
+
+<p><strong>DISCLAIMER: it seems the website theme doesn&rsquo;t recognize the images direction and just shows them all in landscape, I don&rsquo;t think I&rsquo;ll fix this</strong></p>
+
+<p>From february 9 to 11 I joined some recursers at the <a href="https://www.amnh.org/calendar/hackathon-hack-the-deep">Hack the Deep</a> Hackaton. It was amazing.</p>
+
+<p>Different to other Hackatons, it wasn&rsquo;t an open project one. The American Museum of Natural History had worked with some of their scientists to come up with challenges they needed technical skills to solve. These challanges were all marine/ocean related, but ranged from working with trilobite&rsquo;s fosils to tracking the spread pattern of oils spills in the ocean.</p>
+
+<p>Our RC team was conformed by Katie, Kristen, Ana, Emma and me, and as we realized on our first meeting, none of us had Machine Learning or Computer Vision skills, which were required to tackle many of the challenges.
+We had decided to tackle what seemed as an easy Computer Vision problem that required us to analize trilobite fossils, and as a backup plan creating a crowdsourcing  tool for volunteers to clasify trilobites (many of us had fullstack experience)</p>
+
+<h3 id="friday-evening">Friday Evening</h3>
+
+<p>We got to the museum at 5 pm and were welcomed by a large number of volunteers and pizza! We got to wander around the museum a bit, it was closed so it felt like a victorian anthopological society club</p>
+
+<p><img src="/img/hackaton7.jpg" alt="Imagen" />
+<img src="/img/hackaton5.jpg" alt="Imagen" />
+<img src="/img/hackaton6.jpg" alt="Imagen" />
+<img src="/img/hackaton4.jpg" alt="Imagen" /></p>
+
+<p>The Scientists presented their projects at the auditorium, and I think that made us all rethink our challenge choice. All of the projects seemed really interesting, but some seemed like they would have a larger impact on the scientists work.</p>
+
+<h3 id="saturday-all-day">Saturday all day</h3>
+
+<p>So, this was it! The hackaton began at 2pm. We were received with a nice bag of swag that included everything the organizers thought we might need for a night of <strong>hacking</strong>, coffee chocolate beans, ear plugs, headphones, water bottle (which I lost) USB sticks, toy puzzles???, etc, here is a picture of it.</p>
+
+<p><img src="/img/swag.jpg" alt="Imagen" /></p>
+
+<p>While we were queueing, on Kristen suggestion, we decided to switch challenges for the largest one. We had actually avoided it because it said at least 3 teams were rerquired to tackle it, but it sounded really important.</p>
+
+<p>Basically, the museum has over 33 million specimens cataloged in one or another way, but sadly many of them don&rsquo;t fit any cataloging standard. We were to work with the marine catalog, which were many spreadsheets with over 200 columns and thousands of rows).</p>
+
+<p>The whole project was divided in three areas</p>
+
+<h4 id="1-cleaning-the-data">1. Cleaning the data</h4>
+
+<p>The excel sheets were messy, some lacked data, others had lot&rsquo;s of typos (Liam instead of Lima for example) and the date formats were amost stuff like:</p>
+
+<ul>
+<li>1902-02-23</li>
+<li>11</li>
+<li>1890 xi</li>
+<li>2/2/20</li>
+<li>1945 october</li>
+</ul>
+
+<p>The goal was to clean as much data as posible for the other tasks to be completed</p>
+
+<h4 id="2-showing-the-data">2. Showing the data</h4>
+
+<p>With the dates and location inputs cleaned, this task implied finding the most precise geolocation for each item (long and lat in decimal notation). With this, interactive maps could be created that would show where in the world and when whci specimens were found. This would also allow to see any changes in population density across the years for certain specimens.</p>
+
+<h4 id="3-tools-for-generating-clean-data">3. Tools for generating clean data</h4>
+
+<p>A third task was to come up with an online tool so voulunteers could enter the data, this tools has to have a validation process that would enforce valid location names, long and lat would be gotten automatically, and dates would all have the same format.</p>
+
+<h3 id="the-actual-team-and-hacking">The actual team and hacking</h3>
+
+<p>So, each task was large by itself, so somehow we started joining other small teams or single hackers that wanted to tackle the same problem, and ended up with a massive 15+ person team. We divided us into data cleaners and application builders, and started hacking.</p>
+
+<p>One thing I loved about the team, was that usually it&rsquo;s hard to get developers with similar backgrounds working together, for example, we had 6 fullstack developers, but one worked in Ruby, 2 worked in Node, one worked in python, another in Java and another in C#. Instead of fighting over who would do what, we just asked eachother who was the most excited to help with each part of the project, and three of us decided to help with other parts of the process instead of doing backend.</p>
+
+<p>I took part in creating diferent python tools or scripts for reading the csv files, validating dates, paired with Katie for a bit on their geo localization tool, saw Ana work on data analysis for the items geolocation around the world, and paired with Kristen on one functionality for the Web tool for generating clean data.</p>
+
+<p>It was amazing how in the end, 30 mins prior to the end of the hackaton, all parts of the process assembled together and real clean data was being served to a node backend API that would then parse it and send it to the Data visualization tool.</p>
+
+<h3 id="the-night-at-the-museum">The night at the museum</h3>
+
+<ul>
+<li>Food was AMAZING</li>
+<li>It was cold as hell, barely slept more than 30 mins without waking up from the cold.</li>
+<li>They didn&rsquo;t allow us to go visit the dinosaurs at night!</li>
+<li>I slept next to a massive walrus</li>
+<li>They kept intwrrupting the hackaton to organize nice events, like a cocktail (good drinks and amazing cheese), and a private observatory show. How dare they!!!</li>
+</ul>
+
+<h4 id="some-pictures">Some pictures</h4>
+
+<p><img src="/img/hackaton1.jpg" alt="Imagen" />
+<img src="/img/hackaton2.jpg" alt="Imagen" /></p>
+
+            </div>
+            
+            <div class="post-comments">
+                
+            </div>
+            
+            <div class="push"></div>
+        </div>
+        <footer class="footer text-center">
+<p>Copyright &copy; 2018 Pedro Baumann -
+<span class="credit">
+	Powered by
+	<a target="_blank" href="https://gohugo.io">Hugo</a>
+	and
+	<a target="_blank" href="https://github.com/LordMathis/hugo-theme-nix/">Nix</a> theme.
+</span>
+</p>
+</footer>
+
+    </body>
