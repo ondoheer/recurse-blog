@@ -6,10 +6,59 @@
     <description>Recent content in Posts on My Recursive Time</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 20 Jan 2018 09:56:01 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 20 Feb 2018 09:56:01 -0500</lastBuildDate>
     
 	<atom:link href="http://blog.ondoheer.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Wait what?? where did it go?</title>
+      <link>http://blog.ondoheer.com/posts/february/</link>
+      <pubDate>Tue, 20 Feb 2018 09:56:01 -0500</pubDate>
+      
+      <guid>http://blog.ondoheer.com/posts/february/</guid>
+      <description>So, Here it goes again. First I stopped publishing, then I took my whole server down. The story has many parts, but the importante parts:
+ I finished the Go backend and decided not to use it. Go is amazing, but if I am not going to be using it regularly, it makes no sense to mantain an app in a language I will abrely use. I rebuild it all from scratch using Flask Then I decided to build the frontend in ReactJS, and it was great (more coming soon) I took part the Hack The Deep AMNH hackaton and we won!</description>
+    </item>
+    
+    <item>
+      <title>Day 18: Golang, Algos and I need to sleep!</title>
+      <link>http://blog.ondoheer.com/posts/18/</link>
+      <pubDate>Fri, 26 Jan 2018 09:56:01 -0500</pubDate>
+      
+      <guid>http://blog.ondoheer.com/posts/18/</guid>
+      <description>I stayed up late reading all about Golang frameworks, their patterns, how they recommend to work, and what it’s good for. Most people didin’t recommend it for fast changing projects, and it’s strength is on concurrency, so for small MPV’s it makes no sense. Still I feel it’s really opening my mind to diferent programming paradigms, so I’ll finish building the small redo of my expense tracker app with go and react.</description>
+    </item>
+    
+    <item>
+      <title>Day 17: Redux, check? Golang otw</title>
+      <link>http://blog.ondoheer.com/posts/17/</link>
+      <pubDate>Thu, 25 Jan 2018 09:56:01 -0500</pubDate>
+      
+      <guid>http://blog.ondoheer.com/posts/17/</guid>
+      <description>Today I finished refactoring my DiceRoller app to Redux. It worked! James helped me grasp the subtleties ob how I should dispatch the events, and the pattern is actually exciting! I still need a lot more practice, I’m thinking about creating a PWA for the cthulu RPG based on karels design.
+I started learning Golang today by following their tutorial on webservers. I managed to create a simple webapp and failed when I tried to create composable templates, but I’m sure I’ll have it figured out by tomorrow.</description>
+    </item>
+    
+    <item>
+      <title>Day 16: Stay at home React Developer</title>
+      <link>http://blog.ondoheer.com/posts/16/</link>
+      <pubDate>Wed, 24 Jan 2018 09:56:01 -0500</pubDate>
+      
+      <guid>http://blog.ondoheer.com/posts/16/</guid>
+      <description>I stayed at home to wait for the Fedex delivery, and now it says it might come at any time from 12-20… I’ll try to make the best out of this day. I finished my basic version of the Dice Roller App, and now I will go through the Redux tutorials to see if I can refactor my code to use it.
+By the end of the day I had to things clear: 1.</description>
+    </item>
+    
+    <item>
+      <title>Day 15: Writting Assembly, Blood Batteries, Google Glass</title>
+      <link>http://blog.ondoheer.com/posts/15/</link>
+      <pubDate>Tue, 23 Jan 2018 09:56:01 -0500</pubDate>
+      
+      <guid>http://blog.ondoheer.com/posts/15/</guid>
+      <description>I arrived really early to make the most out of the day. I started by watching week 3 of the Algo’s course, and then spend the morning doing the nand2tetris assembly psets. It was fun, I coundl’t handle working as an assembly coder, but doing it just for fun was amazing. It reminded me of the logic problems, which seemed more like a puzzle than homework.
+Ann brought her old Google Glass set today.</description>
+    </item>
     
     <item>
       <title>Day 12-13: React take 2</title>

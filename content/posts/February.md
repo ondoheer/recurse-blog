@@ -1,7 +1,7 @@
 ---
 title: "Wait what?? where did it go?"
 date: 2018-02-20T09:56:01-05:00
-draft: true
+draft: false
 ---
 
 So, [Here it goes again](https://www.youtube.com/watch?v=dTAAsCNK7RA). First I stopped publishing, then I took my whole server down. The story has many parts, but the importante parts:
