@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title> Devops and Debugging &middot; My Recursive Time </title>
+
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="generator" content="Hugo 0.36" />
+
+
+<script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="http://blog.ondoheer.com/css/nix.css">
+
+
+<link href="https://fonts.googleapis.com/css?family=Inconsolata|Open+Sans|Roboto|Montserrat|Concert+One" rel="stylesheet">
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-56029240-4', 'auto');
+	  ga('send', 'pageview');
+
+</script>
+
+
+    </head>
+
+    <body>
+        <header>
+<nav class="navbar navbar-default navbar-fixed-top navbar-inverse font-header">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" id="green-terminal" href=http://blog.ondoheer.com>ondoheer@RecurseNYC ~ $</a>
+		</div>
+
+		
+		<div class="collapse navbar-collapse" id="navbar-collapse-1">
+			<ul class="nav navbar-nav navbar-right">
+				<li>
+					<a href="http://blog.ondoheer.com">/home/ondoheer</a>
+				</li>
+				
+				
+				<li >
+					<a href="/posts">~/posts</a>
+				</li>
+				
+
+			</ul>
+		</div>
+	</div>
+</nav>
+</header>
+
+        <div class="container wrapper">
+            <h1><a href="http://blog.ondoheer.com/posts/devops-debugging/">Devops and Debugging</a></h1>
+            <span class="post-date">Feb 22, 2018 </span>
+            <div class="post-content">
+                
+
+<p>Today is thursday and I feel I have spend the whole week just debugging stuff. The nice part, is everything works now, and I felt no rush to be done quick because I had to go to work at my practice or the client&rsquo;s budget had alreasdy run out and we were losing money.
+This was really good. It made me value what having time to really get to understand a problem does for the project. I&rsquo;m planing to enforce this kind of mindset on myself for the rest of the batch. I tend to be hasty and programming has taught me to stop, evaluate, and plan ahead. Sadly, my part time disposition at Athelas and the reality of having clients with a small budget didin&rsquo;t always fit in this model, or so I felt.</p>
+
+<h2 id="react">React</h2>
+
+<p>I had finished my application MVP last friday, and I decided to improve some parts of the code. Specifically, I hated the way I was protecting my routes, doing a <em>isLogedIn</em> check on every <em><Route/></em> seemed not DRY enough.</p>
+
+<p>I found two ways of abstracting that behaviour, High Order Components and A Simple wrapping Component. I wanted to try the HOCs first, they reminded me of the python decorators and seemed a commonly used pattern in the React world.</p>
+
+<p>So, this is what my HOCs looked like</p>
+
+<pre><code class="language-javascript">
+export const ProtectedRoute = (redirectTo, AlternativeComponent) =&gt; {
+  const isLoged = localStorage.getItem(&quot;access_token&quot;);
+  console.log(`From inside the protected views HOC we say user is ${isLoged}`);
+  const renderNext = isLoged ? (
+    &lt;AlternativeComponent /&gt;
+  ) : (
+    &lt;Redirect to={`${redirectTo}`} /&gt;
+  );
+  return props =&gt; &lt;Route {...props} render={() =&gt; renderNext} /&gt;;
+};
+
+</code></pre>
+
+<p>They worked just fine, so I left on Friday just feeling happy about it! Guess what? I hadn&rsquo;t properly tested everything. The HOCs somehow messed with the Router History, and the <code>history.push('/route')</code> method wasn&rsquo;t doing anything.</p>
+
+<p>So after hours of not finding anything in the react-router documentation (Yeah I tried composing my views with withRouter, and I tried the untested react-router-redux) I decided to go for the Helper components.</p>
+
+<p>This is what they looked like (much simpler, no?)</p>
+
+<pre><code class="language-javascript">
+
+const ProtectedRedirectToLogin = ({ children }) =&gt; {
+  const isLoged = localStorage.getItem(&quot;access_token&quot;);
+  console.log(children);
+  return isLoged ? children : &lt;Redirect to=&quot;/login&quot; /&gt;;
+};
+
+</code></pre>
+
+<p>Well it turns out I still have the same problem&hellip;</p>
+
+<p>So while I try to figure this out, I went back to doing the non DRY routes</p>
+
+<pre><code class="language-jsx">
+
+&lt;Route
+            exact
+            path=&quot;/main&quot;
+            render={() =&gt; {
+              const isLoged = localStorage.getItem(&quot;access_token&quot;);
+              return isLoged ? &lt;HomeContainer /&gt; : &lt;Redirect to=&quot;/login&quot; /&gt;;
+            }}
+          /&gt;
+
+</code></pre>
+
+<h2 id="vagrant">Vagrant</h2>
+
+<p>I also had a 6h battle with Vagrant and a specific build system that required it. I had to help in a project that was build on top of <a href="https://roots.io/trellis/">Trellis</a> whic seemed like an over engenieered system for WP sites to me the first time I assesed it. Now, after the battle, I am not sure, it might be awesome, but it might get in the way like this time for simpler WP sites.</p>
+
+<p>The problem here was that the virtual machine could not mount (sync) my systems folder on their virtual drive. Apparently it was trying to enforce NFS v3 and my system worked with V4. Roberto was helping me along the way, and we came up with tons of different solutions, we even changed some of the basic functions for loading the box, but it still didin&rsquo;t help.</p>
+
+<p>After hours fo experiments (trying on windows, yeah right&hellip;it did not work, enforcing system NFS version, trying to ssh in the machine and runing all of the ansible configurations by hand, thinking about spining a VPS, etc) we called on David to see if he could come up with another solution. He said he was pretty new to Vagrant, but his new set of eyes noticed we were actively declaring the use of NFS and that Vagrant by default didin&rsquo;t require it. I actually thought he had to be wrong and maybe he was using NFS on the back, I was wrong, he was right. By removing that bit of code from the Vagrantfile the system booted and provisioned with Ansible flawlessly. It turns out Vagrant uses FUSE by default!!!</p>
+
+<h2 id="docker-digital-ocean">Docker, Digital Ocean</h2>
+
+<p>with my app already finished, I want to deploy it, but I want to do it using a better way that what I am used to. I have been reading and studying Docker, and even though I am still a little confused about the ins and outs of it, and how to tackle specific problems, I think it will be something I will keep on learning so I can deploy everything.</p>
+
+<p>I have created and destroyed over 5 DO machines yesterday, just doing experiments and trying to figure out stuff. Roberto showed me Docker-machine and Peter walked me through his whole express/react setup last night. I think today I will try to start a dockermachine managed instance of my app.</p>
+
+            </div>
+            
+            <div class="post-comments">
+                
+            </div>
+            
+            <div class="push"></div>
+        </div>
+        <footer class="footer text-center">
+<p>Copyright &copy; 2018 Pedro Baumann -
+<span class="credit">
+	Powered by
+	<a target="_blank" href="https://gohugo.io">Hugo</a>
+	and
+	<a target="_blank" href="https://github.com/LordMathis/hugo-theme-nix/">Nix</a> theme.
+</span>
+</p>
+</footer>
+
+    </body>
