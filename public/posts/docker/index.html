@@ -2,7 +2,7 @@
 <html>
 
     <head>
-        <title> Day 6: Phishing &middot; My Recursive Time </title>
+        <title> Docker...Docker...Docker &middot; My Recursive Time </title>
 
         <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
@@ -75,38 +75,35 @@ ga('create', 'UA-56029240-4', 'auto');
 </header>
 
         <div class="container wrapper">
-            <h1><a href="http://blog.ondoheer.com/posts/6/">Day 6: Phishing</a></h1>
-            <span class="post-date">Jan 14, 2018 </span>
+            <h1><a href="http://blog.ondoheer.com/posts/docker/">Docker...Docker...Docker</a></h1>
+            <span class="post-date">Feb 26, 2018 </span>
             <div class="post-content">
                 
 
-<p>So, today was sunday, but we could still come to RC, it&rsquo;s open 24x7! I decided I wanted to try to implement a website idea I had a while ago while documenting on the referrer browser functionality. The referrer functionality allows a website that was opened with a <em>target=&rdquo;_blank&rdquo;</em> attribute, to take control of the original website location context, so it could change the previous website while you are not looking.</p>
+<p>Last week I decided to finally tackle Docker. As always, I set myself the goal to be done with it at most by friday night. I maged to, on friday at 11pm at my house, but it was hard as hell.</p>
 
-<p>The first time I read about this, I did a quick implementation using my blog, so if you click on <a href="http://ondoheer.com">ondoheer.com</a> it could switch your original website from whatever it was to whatever I want to. In this case it&rsquo;s just another article on our blog.</p>
+<p>I have a bit of DevOps experience, I mostly know how to configure linux servers by hand, and have used tools such as Pythons Fabric library, I have even played or worked on allready built Docker projects, but I felt I needed to understand it more, and see how to deploy more complex projects.</p>
 
-<p>Usually this could be dangerous if for example, you would click on a link on Facebook, it would open a new window for that link, and while you werent looking, it would change your Facebook page to a phishing Facebook login page. You would not realize because you would be watching the new website.</p>
+<p>After a day of research my goal was clear, I wanted to be able to deploy <strong>many</strong> projects to the same Digital Ocean droplet to save money. This is going to be for my personal projects, so money matters.</p>
 
-<p>So, to build a targeted attack is easy, you just clone the login page for whatever website you wanted to target, but I wanted to see if I could do it for random sites, and on the go.</p>
+<p>I would be using a Docker Nginx reverse proxy image that had an automatic discovery feature that would let other docker projects (with the right directives) attach to it and would generate the required server directives for it.</p>
 
-<p>Many big sites know by now about this vulnerability, and automatically add the required protection attributes to their links, while others implement some same origin policy meta tags that ofuscate the link referrer. In the latter cases I would just show a warning website.</p>
+<p>This was hard. I am still figuring out my optimal workflow with it, but after spending 3 days of frustration with Docker, I realized I was frustrated with all the outdated courses, resources and blog posts around it. Pairing with Laurent and going through Peter&rsquo;s code really gave me an insight on how I should be aproaching the problem, and in the end I would recommend to just go through the docker documentation, playing with dockerfiles and docker compose and break things. I usually understand more after breaking things and wondering what went wrong.</p>
 
-<p>In the end it worked, here is a quick rundown of how I implemented it:</p>
+<p>I have finished to setup my Production docker-compose.yml file,and now I have to figure out how to use Docker machine for deployment, but I finally feel comfortable enough aorund the ecosystem to work with it.</p>
 
-<ol>
-<li>Try to get the referrer website URL</li>
-<li>Search for a <em>DOMAIN/login</em> route on that domain</li>
-<li>If it exists, clone it with wget and switch it&rsquo;s routes to absolute ones, so we can serve that simple HTML</li>
-<li>Inject that HTML with malicious code (in this case just a warning)</li>
-<li>Change the users original website to this new one</li>
-</ol>
-
-<p>I&rsquo;ll try to upload a demo as soon as I finish styling it (just plain HTML atm)</p>
+<p>I am having some troubles with the CORS headers, both apps (front and back) are being served through the same NGINX proxy on the same <em>/etc/hosts domain</em> and I still get the CORS rejections by the server.</p>
 
 <h3 id="snippets">Snippets</h3>
 
 <ul>
-<li>Played Catan with Joe (flatmate) and his friends. It was great, their are really funny.</li>
-<li>Went to a pub with them, managed to stay awake until 2 am, then went back home. Faki is a catalan that lives here, he invited me to a Digital Ocean meeting on wednesday, exciting!</li>
+<li>My dad had a layover here for a few hours and we went for amazing pizza</li>
+<li>I got a freelance job with a great client via Roberto, will work on it on the weekends</li>
+<li>I went to Ludi&rsquo;s secret birthday party, was really fun.</li>
+<li>Pablo invited us all over for brunch, we had a great Lomo saltado and Tacu tacu brunch finished byt a tasty rice pudding with mango.</li>
+<li>Found my 4 pairs of onitsuka tigers (yeah, for to replace the 4 I got 8 years ago)</li>
+<li>Got up to date with Walking Dead comic, damn it&rsquo;s good.</li>
+<li>Tried Magnolia&rsquo;s banana pudding&hellip;I don&rsquo;t want to know where Magnolia is.</li>
 </ul>
 
             </div>
