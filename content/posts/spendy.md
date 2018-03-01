@@ -23,3 +23,9 @@ Things I need to change
 * Write a python cli tool to handle my docker machine operations
 
 So, finally, [Spendy][//spendy.site] is live! It's an alpha release, test at your own risk!
+
+### Snippets
+
+* Went to do Iengar Yoga for the first time. It was harder than in Lima Yoga! The teacher was great and the studio is awesome, I will try to go Monday through Friday
+* I'm cooking breakfast at RC now, great decision
+* I'll work on a presentation for today
