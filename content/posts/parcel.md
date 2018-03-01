@@ -1,6 +1,6 @@
 ---
 title: "Parcel testing, is it a good idea?"
-date: 2018-02-27T09:56:01-05:00
+date: 2018-02-28T09:56:01-05:00
 draft: false
 ---
 

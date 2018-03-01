@@ -2,7 +2,7 @@
 <html>
 
     <head>
-        <title> Parcel testing, is it a good idea? &middot; My Recursive Time </title>
+        <title> Spendy alpha launch! &middot; My Recursive Time </title>
 
         <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
@@ -75,33 +75,32 @@ ga('create', 'UA-56029240-4', 'auto');
 </header>
 
         <div class="container wrapper">
-            <h1><a href="http://blog.ondoheer.com/posts/parcel/">Parcel testing, is it a good idea?</a></h1>
-            <span class="post-date">Feb 28, 2018 </span>
+            <h1><a href="http://blog.ondoheer.com/posts/spendy/">Spendy alpha launch!</a></h1>
+            <span class="post-date">Feb 1, 2018 </span>
             <div class="post-content">
-                
+                <p>Yesterday I started the day by adjusting my css code to work <em>decently</em> on all devices. I felt I couldn&rsquo;t start looking into deployment until this was ready. Thanks to <strong>Martín el Coach</strong> and his great media queries mixins, this took only about 2 hours. This was supposed to be my task for the day, so I started solving minor issues.
+At lunch we wen&rsquo;t for some cheap chinese and a stroll at the park (James, Lily, Ana and me), then I went to book my Yoga classes.</p>
 
-<p>Yesterday James and I decided to test parcel as React/Redux project bundler. At first it seemed magical, we just removed Webpack and everything just worked, we could even import the root scss file directly into our index.html and it would take care of everything. So much magic came at a cost we are still assesing though.</p>
+<p>When I came back it was still early (around 3pm) so I decided it was time to work with Docker Machine.
+I had to jump through some hurdles, I still don&rsquo;t like how it takes over the context of that terminal, and how easy that could turn bad.</p>
 
-<ol>
-<li>If you import an empty scss file, <strong>it breaks</strong></li>
-<li>If you import the same file (js or scss/css) from your html and your main .jsx file, <strong>it breaks</strong></li>
-<li>Hot reloading with redux is complicated. We are looking at different ways to achive it. Doing it wrong can cause 2 different problems:
-
-<ol>
-<li>It triggers an endless recursive call and exceeds the stack limit <strong>it breaks</strong></li>
-<li>It messes with the store, in my case, it wasn&rsquo;t triggering Thunk events.
-
-<br /></li>
-</ol></li>
-</ol>
-
-<h3 id="snippets">Snippets</h3>
+<p>Things I had to do that were tricky:</p>
 
 <ul>
-<li>Risk of rain didin&rsquo;t work</li>
-<li>Walked home again yesterday</li>
-<li>Had a great talk with Perri about the Agency Market</li>
+<li>Write my dpeloyment scripts</li>
+<li>Make changes into my apps so they would use different configs at Production</li>
+<li>Config NIGX proxy to allow for CORS access from the subdomain</li>
 </ul>
+
+<p>Things I need to change</p>
+
+<ul>
+<li>Add SSL support with let&rsquo;s encrypt</li>
+<li>Add a DB backup system</li>
+<li>Write a python cli tool to handle my docker machine operations</li>
+</ul>
+
+<p>So, finally, [Spendy][//spendy.site] is live! It&rsquo;s an alpha release, test at your own risk!</p>
 
             </div>
             

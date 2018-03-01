@@ -6,10 +6,20 @@
     <description>Recent content in Posts on My Recursive Time</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 27 Feb 2018 09:56:01 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 28 Feb 2018 09:56:01 -0500</lastBuildDate>
     
 	<atom:link href="http://blog.ondoheer.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Parcel testing, is it a good idea?</title>
+      <link>http://blog.ondoheer.com/posts/parcel/</link>
+      <pubDate>Wed, 28 Feb 2018 09:56:01 -0500</pubDate>
+      
+      <guid>http://blog.ondoheer.com/posts/parcel/</guid>
+      <description>Yesterday James and I decided to test parcel as React/Redux project bundler. At first it seemed magical, we just removed Webpack and everything just worked, we could even import the root scss file directly into our index.html and it would take care of everything. So much magic came at a cost we are still assesing though.
+ If you import an empty scss file, it breaks If you import the same file (js or scss/css) from your html and your main .</description>
+    </item>
     
     <item>
       <title>And I thought I was done...</title>
@@ -18,16 +28,6 @@
       
       <guid>http://blog.ondoheer.com/posts/docker-2/</guid>
       <description>So, I fixed the CORS issue, and as I suspected, it wasn&amp;rsquo;t a CORS issue per se. It was really frustrating, because it meant there was something I wasn&amp;rsquo;t getting right. Laurent came to help me (again) and we could not finish tackling the problem because I had a patient call. It was kind of frustrating, I wanted to move on and keep on learning new stuff! Oh, and my Skype account got Hacked as I was having my session!</description>
-    </item>
-    
-    <item>
-      <title>Parcel testing, is it a good idea?</title>
-      <link>http://blog.ondoheer.com/posts/parcel/</link>
-      <pubDate>Tue, 27 Feb 2018 09:56:01 -0500</pubDate>
-      
-      <guid>http://blog.ondoheer.com/posts/parcel/</guid>
-      <description>Yesterday James and I decided to test parcel as React/Redux project bundler. At first it seemed magical, we just removed Webpack and everything just worked, we could even import the root scss file directly into our index.html and it would take care of everything. So much magic came at a cost we are still assesing though.
- If you import an empty scss file, it breaks If you import the same file (js or scss/css) from your html and your main .</description>
     </item>
     
     <item>
@@ -68,6 +68,15 @@ Different to other Hackatons, it wasn&amp;rsquo;t an open project one. The Ameri
       <guid>http://blog.ondoheer.com/posts/february/</guid>
       <description>So, Here it goes again. First I stopped publishing, then I took my whole server down. The story has many parts, but the importante parts:
  I finished the Go backend and decided not to use it. Go is amazing, but if I am not going to be using it regularly, it makes no sense to mantain an app in a language I will abrely use. I rebuild it all from scratch using Flask Then I decided to build the frontend in ReactJS, and it was great (more coming soon) I took part the Hack The Deep AMNH hackaton and we won!</description>
+    </item>
+    
+    <item>
+      <title>Spendy alpha launch!</title>
+      <link>http://blog.ondoheer.com/posts/spendy/</link>
+      <pubDate>Thu, 01 Feb 2018 09:56:01 -0500</pubDate>
+      
+      <guid>http://blog.ondoheer.com/posts/spendy/</guid>
+      <description>Yesterday I started the day by adjusting my css code to work decently on all devices. I felt I couldn&amp;rsquo;t start looking into deployment until this was ready. Thanks to Martín el Coach and his great media queries mixins, this took only about 2 hours. This was supposed to be my task for the day, so I started solving minor issues. At lunch we wen&amp;rsquo;t for some cheap chinese and a stroll at the park (James, Lily, Ana and me), then I went to book my Yoga classes.</description>
     </item>
     
     <item>
