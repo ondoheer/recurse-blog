@@ -1,6 +1,6 @@
 ---
 title: "Spendy alpha launch!"
-date: 2018-02-01T09:56:01-05:00
+date: 2018-03-01T09:56:01-05:00
 draft: false
 ---
 
