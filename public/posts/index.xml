@@ -6,10 +6,19 @@
     <description>Recent content in Posts on My Recursive Time</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 28 Feb 2018 09:56:01 -0500</lastBuildDate>
+    <lastBuildDate>Thu, 01 Mar 2018 09:56:01 -0500</lastBuildDate>
     
 	<atom:link href="http://blog.ondoheer.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Spendy alpha launch!</title>
+      <link>http://blog.ondoheer.com/posts/spendy/</link>
+      <pubDate>Thu, 01 Mar 2018 09:56:01 -0500</pubDate>
+      
+      <guid>http://blog.ondoheer.com/posts/spendy/</guid>
+      <description>Yesterday I started the day by adjusting my css code to work decently on all devices. I felt I couldn&amp;rsquo;t start looking into deployment until this was ready. Thanks to Martín el Coach and his great media queries mixins, this took only about 2 hours. This was supposed to be my task for the day, so I started solving minor issues. At lunch we wen&amp;rsquo;t for some cheap chinese and a stroll at the park (James, Lily, Ana and me), then I went to book my Yoga classes.</description>
+    </item>
     
     <item>
       <title>Parcel testing, is it a good idea?</title>
@@ -71,15 +80,6 @@ Different to other Hackatons, it wasn&amp;rsquo;t an open project one. The Ameri
     </item>
     
     <item>
-      <title>Spendy alpha launch!</title>
-      <link>http://blog.ondoheer.com/posts/spendy/</link>
-      <pubDate>Thu, 01 Feb 2018 09:56:01 -0500</pubDate>
-      
-      <guid>http://blog.ondoheer.com/posts/spendy/</guid>
-      <description>Yesterday I started the day by adjusting my css code to work decently on all devices. I felt I couldn&amp;rsquo;t start looking into deployment until this was ready. Thanks to Martín el Coach and his great media queries mixins, this took only about 2 hours. This was supposed to be my task for the day, so I started solving minor issues. At lunch we wen&amp;rsquo;t for some cheap chinese and a stroll at the park (James, Lily, Ana and me), then I went to book my Yoga classes.</description>
-    </item>
-    
-    <item>
       <title>Day 18: Golang, Algos and I need to sleep!</title>
       <link>http://blog.ondoheer.com/posts/18/</link>
       <pubDate>Fri, 26 Jan 2018 09:56:01 -0500</pubDate>
@@ -89,7 +89,7 @@ Different to other Hackatons, it wasn&amp;rsquo;t an open project one. The Ameri
     </item>
     
     <item>
-      <title>Day 17: Redux, check? Golang otw</title>
+      <title>Day 17: Redux, check? Golang FTW</title>
       <link>http://blog.ondoheer.com/posts/17/</link>
       <pubDate>Thu, 25 Jan 2018 09:56:01 -0500</pubDate>
       
