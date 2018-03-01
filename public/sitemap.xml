@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://blog.ondoheer.com/posts/docker-2/</loc>
+    <lastmod>2018-02-27T09:56:01-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.ondoheer.com/posts/parcel/</loc>
+    <lastmod>2018-02-27T09:56:01-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://blog.ondoheer.com/posts/docker/</loc>
     <lastmod>2018-02-26T09:56:01-05:00</lastmod>
   </url>
@@ -114,13 +124,13 @@
   
   <url>
     <loc>http://blog.ondoheer.com/</loc>
-    <lastmod>2018-02-26T09:56:01-05:00</lastmod>
+    <lastmod>2018-02-27T09:56:01-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://blog.ondoheer.com/posts/</loc>
-    <lastmod>2018-02-26T09:56:01-05:00</lastmod>
+    <lastmod>2018-02-27T09:56:01-05:00</lastmod>
     <priority>0</priority>
   </url>
   
