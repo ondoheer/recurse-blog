@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>#JavaScript30 and PWA</title>
+      <link>http://blog.ondoheer.com/posts/js30-pwa/</link>
+      <pubDate>Thu, 01 Mar 2018 09:56:01 -0500</pubDate>
+      
+      <guid>http://blog.ondoheer.com/posts/js30-pwa/</guid>
+      <description>Yesterday after presenting Spendy I started to work on it&amp;rsquo;s PWA side. I fixed some minor bugs, and then researched a bit about different PWA implementations. To be truly able to deploy I need for them to work on production on a secure server, so I will have to try the let&amp;rsquo;s encrypt nginx-helper docker image first. If that fails, I&amp;rsquo;ll end up using cloudflare as the main server and take advantage of their SSL cert.</description>
+    </item>
+    
+    <item>
       <title>Spendy Presentation</title>
       <link>http://blog.ondoheer.com/posts/spendy-presentation/</link>
       <pubDate>Thu, 01 Mar 2018 09:56:01 -0500</pubDate>
