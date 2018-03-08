@@ -6,10 +6,32 @@
     <description>Recent content in Posts on My Recursive Time</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 01 Mar 2018 09:56:01 -0500</lastBuildDate>
+    <lastBuildDate>Thu, 08 Mar 2018 09:56:01 -0500</lastBuildDate>
     
 	<atom:link href="http://blog.ondoheer.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Webpack4 with hot reloading</title>
+      <link>http://blog.ondoheer.com/posts/webpack4/</link>
+      <pubDate>Thu, 08 Mar 2018 09:56:01 -0500</pubDate>
+      
+      <guid>http://blog.ondoheer.com/posts/webpack4/</guid>
+      <description>Yesterday I finished setting up my Docker system to handle the automatic SSL system with Let&amp;rsquo;s Encrypt. After that I wanted to get back to programming, and Parcel was getting on the way. It did too much magic for my taste, and Webpack 4 was just released, apparently with a similar mindset.
+It is a LIE, the automatic config only works for the most basic cases, and if that is what you are looking for, then I recommed you use Parcel.</description>
+    </item>
+    
+    <item>
+      <title>Pan con chicharron, Uma Thurman y SSL</title>
+      <link>http://blog.ondoheer.com/posts/ssl-pan-chicharron/</link>
+      <pubDate>Tue, 06 Mar 2018 09:56:01 -0500</pubDate>
+      
+      <guid>http://blog.ondoheer.com/posts/ssl-pan-chicharron/</guid>
+      <description>I stated the week by doing Wess Boss JS30 excercises, they are quick, precise and powerful
+Today I spent the whole day figuring out how to deploy my Spendy production system using Docker.gen to autodiscover virtual hosts so another container (let&amp;rsquo;s encrypt helper) would start issuing SSL certificates for the domains.
+I have to tweak a few more things, for example, everything is broken now :P
+Snippets  I prepared pan con chicharron today for friends at RC, we managed to get all the right ingredients!</description>
+    </item>
     
     <item>
       <title>#JavaScript30 and PWA</title>
